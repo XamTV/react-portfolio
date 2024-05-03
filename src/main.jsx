@@ -1,10 +1,39 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
-import './index.css'
+import React from "react";
+import ReactDOM from "react-dom/client";
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import App from "./App";
+import ContactPage from "./pages/ContactPage";
+import HomePage from "./pages/HomePage";
+import ProjectPage from "./pages/ProjectPage";
+import ProjectsPage from "./pages/ProjectsPage";
+
+const router = createBrowserRouter([
+  {
+    element: <App />,
+    children: [
+      {
+        element: <HomePage />,
+        path: "/",
+      },
+      {
+        element: <ProjectsPage />,
+        path: "/projects",
+      },
+      {
+        element: <ProjectPage />,
+        path: "/project/:id",
+      },
+      {
+        element: <ContactPage />,
+        path: "/contact",
+      },
+    ],
+  },
+]);
+
+ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-)
+    <RouterProvider router={router} />
+  </React.StrictMode>
+);
