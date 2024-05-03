@@ -5,13 +5,20 @@
 .HomePageComponent {
   display: flex;
   flex-direction: column;
+  background-color: #363535;
+  width: 85vw;
+  margin: auto;
+  padding: 2rem;
+  border-radius: 15px;
 }
 
 .header {
+  background-color: #363535;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   img {
+    background-color: #363535;
     width: 250px;
     padding: 2rem 0;
     border-radius: 50%;
@@ -21,7 +28,7 @@
 .header > p,
 .HomePageComponent > p {
   background-color: goldenrod;
-  padding: 3rem;
+  padding: 2rem;
   border-radius: 15px;
 }
 
@@ -37,7 +44,7 @@
 .contact {
   text-decoration: none;
   background-color: goldenrod;
-  color: white;
+  color: #000;
   text-align: center;
   margin: 2rem auto;
   padding: 0.5rem;
