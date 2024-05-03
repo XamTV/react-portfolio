@@ -1,10 +1,12 @@
+import { Link } from "react-router-dom";
+
 import Profile from "../assets/profile.jpg";
 import "../styles/HomePage.css";
 
 function HomePage() {
   return (
-    <header className="header">
-      <section className="HomePageComponent">
+    <section className="HomePageComponent">
+      <header className="header">
         <img src={Profile} alt="Coucou" />
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa dolor
@@ -14,7 +16,7 @@ function HomePage() {
           aperiam provident, nesciunt laborum omnis vel itaque voluptatibus
           quas? Quo asperiores facere aut eum.
         </p>
-      </section>
+      </header>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque dolores
         quis accusantium sunt labore veniam accusamus, culpa magni fuga autem
@@ -28,7 +30,10 @@ function HomePage() {
         excepturi ipsam ex voluptas, tempore deserunt enim. Quod dolores
         excepturi illum odio fugit sapiente?
       </p>
-    </header>
+      <Link to={"/contact"} className=" contact">
+        Me Contacter
+      </Link>
+    </section>
   );
 }
 

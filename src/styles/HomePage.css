@@ -4,11 +4,16 @@
 
 .HomePageComponent {
   display: flex;
-  margin: 1rem;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
   align-items: center;
+  justify-content: space-evenly;
   img {
-    width: 20vw;
-    margin: 0 4rem;
+    width: 250px;
+    padding: 2rem 0;
     border-radius: 50%;
   }
 }
@@ -20,11 +25,22 @@
   border-radius: 15px;
 }
 
-.HomePageComponent > p {
+.header > p {
   width: 50vw;
 }
 
-.header > p {
-  width: 75vw;
+.HomePageComponent > p {
+  width: 80vw;
   margin: auto;
+}
+
+.contact {
+  text-decoration: none;
+  background-color: goldenrod;
+  color: white;
+  text-align: center;
+  margin: 2rem auto;
+  padding: 0.5rem;
+  width: 10vw;
+  border-radius: 5px;
 }

@@ -1,9 +1,9 @@
+import "../styles/Footer.css";
+
 function Footer() {
   return (
     <section className="FooterComponent">
-      <h1>Footer</h1>
-
-      <p>Footer Component</p>
+      <p> By Maxime Maussion</p>
     </section>
   );
 }
