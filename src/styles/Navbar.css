@@ -17,4 +17,8 @@ nav {
     border-radius: 5px;
     margin: 0 0.5rem;
   }
+  a:hover {
+    background-color: orange;
+    color: black;
+  }
 }
