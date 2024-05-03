@@ -1,0 +1,30 @@
+* {
+  background-color: black;
+}
+
+.HomePageComponent {
+  display: flex;
+  margin: 1rem;
+  align-items: center;
+  img {
+    width: 20vw;
+    margin: 0 4rem;
+    border-radius: 50%;
+  }
+}
+
+.header > p,
+.HomePageComponent > p {
+  background-color: goldenrod;
+  padding: 3rem;
+  border-radius: 15px;
+}
+
+.HomePageComponent > p {
+  width: 50vw;
+}
+
+.header > p {
+  width: 75vw;
+  margin: auto;
+}
