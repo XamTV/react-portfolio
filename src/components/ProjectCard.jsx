@@ -10,7 +10,10 @@ function ProjectCard() {
           className="projectcard-link"
           key={project.id}
           to={`/projects/${project.name}`}
-          state={{ project: project }}
+          state={{
+            link: project.link,
+            project: project,
+          }}
         >
           <article>
             <figure>
