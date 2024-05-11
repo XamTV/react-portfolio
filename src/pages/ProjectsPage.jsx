@@ -1,9 +1,11 @@
+import ProjectList from "../components/ProjectList";
+import { Outlet } from "react-router-dom";
+
 function ProjectsPage() {
   return (
     <section className="ProjectsPageComponent">
-      <h1>ProjectsPage</h1>
-
-      <p>ProjectsPage Component</p>
+      <ProjectList />
+      <Outlet />
     </section>
   );
 }

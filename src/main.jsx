@@ -8,6 +8,7 @@ import HomePage from "./pages/HomePage";
 import ProjectPage from "./pages/ProjectPage";
 import ProjectsPage from "./pages/ProjectsPage";
 
+import projects from "./datas/projects";
 const router = createBrowserRouter([
   {
     element: <App />,
@@ -19,11 +20,18 @@ const router = createBrowserRouter([
       {
         element: <ProjectsPage />,
         path: "/projects",
+        loader: () => {
+          const project = projects;
+
+          return project;
+        },
+        id: "project",
       },
       {
         element: <ProjectPage />,
-        path: "/project/:id",
+        path: "/projects/:id",
       },
+
       {
         element: <ContactPage />,
         path: "/contact",

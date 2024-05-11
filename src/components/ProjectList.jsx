@@ -1,9 +1,9 @@
+import ProjectCard from "./ProjectCard";
+
 function ProjectList() {
   return (
     <section className="ProjectListComponent">
-      <h1>ProjectList</h1>
-
-      <p>ProjectList Component</p>
+      <ProjectCard />
     </section>
   );
 }
