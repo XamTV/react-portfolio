@@ -24,6 +24,7 @@ function ProjectPage() {
           </Link>
         </figcaption>
       </article>
+      <Link to={"/projects"}>Retourner à la page des projets</Link>
     </section>
   );
 }
