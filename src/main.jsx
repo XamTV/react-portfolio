@@ -8,10 +8,10 @@ import HomePage from "./pages/HomePage";
 import ProjectPage from "./pages/ProjectPage";
 import ProjectsPage from "./pages/ProjectsPage";
 
-import projects from "./datas/projects";
 const router = createBrowserRouter([
   {
     element: <App />,
+
     children: [
       {
         element: <HomePage />,
@@ -20,12 +20,6 @@ const router = createBrowserRouter([
       {
         element: <ProjectsPage />,
         path: "/projects",
-        loader: () => {
-          const project = projects;
-
-          return project;
-        },
-        id: "project",
       },
       {
         element: <ProjectPage />,

@@ -1,16 +1,16 @@
-import { useRouteLoaderData, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "../styles/ProjectCard.css";
 
+import projects from "../datas/projects";
 function ProjectCard() {
-  const projects = useRouteLoaderData("project");
-
   return (
     <section className="projectcard-component">
       {projects.map((project) => (
         <Link
           className="projectcard-link"
           key={project.id}
-          to={`/projects/${project.id}`}
+          to={`/projects/${project.name}`}
+          state={{ project: project }}
         >
           <article>
             <figure>
