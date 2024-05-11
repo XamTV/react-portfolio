@@ -1,0 +1,55 @@
+.projectcard-component {
+  display: flex;
+  justify-content: space-around;
+  height: 71vh;
+  color: white;
+  align-items: center;
+  flex-wrap: wrap;
+  figure {
+    background-color: #363535;
+  }
+}
+.project-image {
+  width: 300px;
+  height: 150px;
+  border-radius: 15px;
+  background-color: #363535;
+}
+
+.projectcard-caption {
+  background-color: goldenrod;
+  border-radius: 15px;
+  height: 20vh;
+  margin: 0 1rem;
+  p {
+    font-size: small;
+    margin: 0;
+    width: 20vw;
+    text-align: center;
+    background-color: goldenrod;
+    padding: 1rem;
+  }
+  h2 {
+    text-align: center;
+    margin: 0;
+    border-radius: 15px;
+    background-color: goldenrod;
+  }
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #363535;
+  border-radius: 20px;
+  height: 45vh;
+}
+
+.projectcard-link {
+  text-decoration: none;
+  color: white;
+  background-color: goldenrod;
+  margin: 1rem 0;
+  border-radius: 25px;
+}

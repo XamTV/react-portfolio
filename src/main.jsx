@@ -11,6 +11,7 @@ import ProjectsPage from "./pages/ProjectsPage";
 const router = createBrowserRouter([
   {
     element: <App />,
+
     children: [
       {
         element: <HomePage />,
@@ -22,8 +23,9 @@ const router = createBrowserRouter([
       },
       {
         element: <ProjectPage />,
-        path: "/project/:id",
+        path: "/projects/:id",
       },
+
       {
         element: <ContactPage />,
         path: "/contact",

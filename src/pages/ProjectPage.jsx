@@ -1,13 +1,30 @@
-import { useParams } from "react-router-dom";
+import { useLocation, Link } from "react-router-dom";
+import "../styles/ProjectPage.css";
 
 function ProjectPage() {
-  const { id } = useParams();
-
+  const location = useLocation();
+  const { project, link } = location.state;
   return (
     <section className="ProjectPageComponent">
-      <h1>ProjectPage {id}</h1>
-
-      <p>ProjectPage Component</p>
+      <h1>{project.name} </h1>
+      <article className="ProjectPage-article">
+        <figure className="project-img">
+          {" "}
+          <img src={project.image} alt="" />{" "}
+        </figure>
+        <figcaption className="ProjectPage-text">
+          <p>{project.desc} </p>
+          <Link to={link} target="_blank">
+            {" "}
+            Déploiment
+          </Link>
+          <Link to={project.github} target="_blank">
+            {" "}
+            Github
+          </Link>
+        </figcaption>
+      </article>
+      <Link to={"/projects"}>Retourner à la page des projets</Link>
     </section>
   );
 }
